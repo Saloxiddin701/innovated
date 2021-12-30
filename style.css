@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e5e5e5;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.navbar .nav-item {
+    display: flex;
+    gap: 107px;
+    align-items: center;
+}
+
+.header .navbar .logo {
+    cursor: pointer;
+}
+
+.header .navbar .ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #171832;
+    font-weight: 500;
+}
+
+.navbar ul li a.active {
+    color: #2D74FF;
+    position: relative;
+}
+
+.navbar ul li a.active:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #2D74FF;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.navbar .burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .burger .bar {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 5px;
+    background: #171832;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #2D74FF;
+    border-radius: 5px;
+}
+
+.job {
+    padding: 10px 0 180px;
+}
+
+.job .parent {
+    display: flex;
+    align-items: center;
+}
+
+.parent .txt {
+    width: 519px;
+}
+
+.parent .txt .digital {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2D74FF;
+    margin-bottom: 15px;
+}
+
+.parent .txt .title {
+    font-size: 57px;
+    font-weight: 600;
+    color: #171832;
+    margin-bottom: 40px;
+}
+
+.parent .txt .title span {
+    color: #2D74FF;
+}
+
+.parent .txt .buttons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.parent .txt .buttons .player {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.parent .txt .buttons .controller {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(45, 116, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.parent .txt .buttons .controller i {
+    padding: 10px 20px;
+    color: #2D74FF;
+    font-size: 30px;
+}
+
+.parent .txt .player h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #171832;
+    opacity: 70%;
+}
+
+.platform {
+    padding-bottom: 140px;
+}
+
+.platform .wrapper {
+    display: flex;
+    gap: 162px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.platform .wrapper .left {
+    width: 420px;
+}
+
+.wrapper .left .community {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2D74FF;
+    opacity: 70%;
+    margin-bottom: 15px;
+}
+
+.wrapper .left .title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #171832;
+    margin-bottom: 25px;
+}
+
+.wrapper .left .text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #171832;
+    opacity: 70%;
+    margin-bottom: 40px;
+}
+
+.platform .wrapper .right .video {
+    position: relative;
+}
+
+.wrapper .right .video .ellipse {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.wrapper .right .video .ellipse span {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #ffffff;
+}
+
+.work {
+    padding-bottom: 154px;
+}
+
+.work .how {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: #171832;
+    margin-bottom: 60px;
+}
+
+.work .box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work .box .card {
+    width: 360px;
+    height: 300px;
+    padding: 23px 22px;
+    border: 1px solid rgba(0,0,0, 0.2);
+    border-radius: 10px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work .box .card .bg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f8f8f8;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.work .box .card .bg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.work .box .card .title {
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 70%;
+    color: #171832;
+    margin-bottom: 15px;
+}
+
+.work .box .card .text {
+    width: 316px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #171832;
+    opacity: 70%;
+}
+
+.work .box .card:nth-child(2) .title {
+    opacity: 100;
+}
+
+.customer {
+    padding-bottom: 140px;
+}
+
+.customer .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.customer .top .saying {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.customer .top .saying .hr {
+    width: 68px;
+    transform: rotate(180deg);
+    border: 2px solid #2D74FF;
+}
+
+.customer .top .saying .title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.customer .top .arrow {
+    display: flex;
+    gap: 40px;
+}
+
+.customer .top .arrow i {
+    padding: 26px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #2D74FF;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.customer .top .arrow i:nth-child(1) {
+    background: #f4f4f4;
+    opacity: 50%;
+}
+
+.customer .box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.customer .box .card {
+    padding: 50px 81px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.customer .box .card i {
+    color: #2D74FF;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.customer .box .card .text {
+    width: 390px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #171832;
+    opacity: 80%;
+    margin-bottom: 30px;
+}
+
+.customer .box .card .user {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.customer .box .card .user .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #171832;
+    margin-bottom: 10px;
+}
+
+.customer .box .card .user h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #171832;
+}
+
+.form {
+    padding-bottom: 140px;
+}
+
+.form .item {
+    padding: 76px 257px;
+    background: url("images/form-bg.png") no-repeat center / cover #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .item .title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #171832;
+    margin-bottom: 20px;
+}
+
+.form .item .text {
+    width: 626px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    opacity: 0.7;
+    margin-bottom: 40px;
+}
+
+.form .item form {
+    display: flex;
+}
+
+.form .item form input {
+    padding: 15px 176px 15px 15px;
+    border: 1px solid rgba(45, 116, 255, 0.2);
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #171832;
+}
+
+.footer .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 72px 0 151px;
+    flex-wrap: wrap;
+}
+
+.footer .item .left {
+    width: 366px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer .item .left .text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #171832;
+    opacity: 70%;
+}
+
+.footer .item .center {
+    display: flex;
+    gap: 95px;
+}
+
+.footer .item .center ul li {
+    list-style-type: none;
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 70%;
+    color: #171832;
+}
+
+.footer .item .center ul .head {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 100%;
+    padding-bottom: 30px;
+}
+
+.footer .item .right .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #171832;
+    margin-bottom: 15px;
+}
+
+.footer .item .gmail {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #171832;
+    opacity: 70%;
+    margin-bottom: 15px;
+}
+
+.footer .item .social {
+    margin-top: 15px;
+    display: flex;
+    gap: 37px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 425px;
+    }
+    .header .navbar ul {
+        opacity: 0;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: #e5e5e5;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 99;
+        transition: 0.4s;
+    }
+    .header .navbar {
+        z-index: 999;
+    }
+    .header.active .navbar {
+        z-index: 999;
+    }
+    .header.active .navbar ul {
+        opacity: 1;
+        pointer-events: all;
+        transition: 0.4s;
+    }
+    .navbar .burger {
+        display: block;
+        z-index: 99;
+    }
+    .navbar .nav-item {
+        gap: 0;
+    }
+    .parent .txt {
+        width: 100%;
+    }
+    .parent .txt .title {
+        font-size: 30px;
+    }
+    .job .parent .header-bg {
+        width: 100%;
+        position: absolute;
+        top: 65%;
+        right: 15%;
+    }
+    .parent .txt .buttons {
+        gap: 10px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .job .parent {
+        flex-wrap: wrap;
+    }
+    .platform {
+        padding: 280px 0 140px;
+    }
+    .platform .wrapper {
+        gap: 50px;
+    }
+    .platform .wrapper .right .video img {
+        width: 100%;
+    }
+    .wrapper .right .video .ellipse {
+        right: 30%;
+    }
+    .customer .top .saying .title {
+        font-size: 25px
+    }
+    .customer .top .arrow {
+        gap: 10px;
+    }
+    .customer .top .arrow i {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .customer .top .saying .hr {
+        width: 20px;
+    }
+    .customer .box .card {
+        width: 100%;
+    }
+    .customer .box .card .text {
+        width: 100%;
+    }
+    .form .item {
+        padding: 45px;
+    }
+    .form .item .text {
+        width: 100%;
+    }
+    .form .item form input {
+        padding: 15px;
+    }
+    .footer .item {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer .item .left {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 375px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        max-width: 320px;
+    }
+    .header .navbar ul {
+        gap: 0;
+    }
+    .header .navbar .logo img {
+        width: 75%;
+    }
+    .btn {
+        padding: 5px 10px;
+    }
+    .wrapper .right .video .ellipse {
+        right: 21%;
+    }
+    .work .box .card {
+        width: 100%;
+    }
+    .customer .box .card {
+        padding: 50px 35px;
+    }
+    .form .item {
+        text-align: center;
+    }
+    .footer .item .left {
+        width: 100%;
+    }
+}
